@@ -1,5 +1,9 @@
+/home/user/ros2_ws/src/robot_description/install/robot_description/share/robot_description/launch/.description_test.launch.xml.swp
 /home/user/ros2_ws/src/robot_description/install/robot_description/share/robot_description/launch/description_test.launch.xml
+/home/user/ros2_ws/src/robot_description/install/robot_description/share/robot_description/launch/turtle.launch.xml
+/home/user/ros2_ws/src/robot_description/install/robot_description/share/robot_description/urdf/.robot.urdf.swp
 /home/user/ros2_ws/src/robot_description/install/robot_description/share/robot_description/urdf/robot.urdf
+/home/user/ros2_ws/src/robot_description/install/robot_description/share/robot_description/config/config.rviz
 /home/user/ros2_ws/src/robot_description/install/robot_description/share/ament_index/resource_index/package_run_dependencies/robot_description
 /home/user/ros2_ws/src/robot_description/install/robot_description/share/ament_index/resource_index/parent_prefix_path/robot_description
 /home/user/ros2_ws/src/robot_description/install/robot_description/share/robot_description/environment/ament_prefix_path.sh
