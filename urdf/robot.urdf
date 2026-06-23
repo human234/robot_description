@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<robot name="myRobot">
+
+	<material name="white">
+		<color rgba="1 1 1 1"/>
+	</material>
+
+	<link name="base_link">
+		<visual>
+			<geometry>
+				<cylinder length="0.6" radius="0.2"/>
+			</geometry>
+			<origin xyz="0 0 0.6"/>
+		</visual>
+	</link>
+	
+	<link name="middle_hand">
+		<visual>
+				<geometry>
+					<cylinder length="0.5" radius="0.15"/>
+				</geometry>
+				<origin rpy="0 1.57075 0" xyz="0 0 -0.2"/>
+				<material name="white"/>
+		</visual>
+	</link>
+	<joint name="right_leg_joint" type="revolute">
+		<axis xyz="0 1 0"/>
+		<limit effort="1000.0" lower="-0.4" upper="0.4" velocity="0.5"/>
+		<parent link="base_link"/>
+		<child link="right_leg"/>	
+		<origin xyz="0 0.2 0" />
+	</joint>
+
+	<link name="left_leg">
+		<visual>
+				<geometry>
+					<box size="0.8 0.2 0.2"/>
+				</geometry>
+				<origin rpy="0 1.57075 0" xyz="0 0 -0.2"/>
+				<material name="white"/>
+		</visual>
+	</link>
+	<joint name="left_leg_joint" type="revolute">
+		<axis xyz="0 -1 0"/>
+		<limit effort="1000.0" lower="-0.4" upper="0.4" velocity="0.5"/>
+		<parent link="base_link"/>
+		<child link="left_leg"/>	
+		<origin xyz="0 -0.2 0" />
+	</joint>
+
+	<link name="big_head">
+		<visual>
+			<geometry>
+				<box size="0.4 0.4 0.4"/>
+			</geometry>
+		</visual>
+	</link>
+	<joint name="big_head_joint" type="revolute">
+		<axis xyz="0 1 0"/>
+		<limit effort="1000.0" lower="-0.4" upper="0.4" velocity="0.5"/>
+		<parent link="base_link"/>
+		<child link="big_head"/>	
+		<origin xyz="0 0 0.4" />
+	</joint>
+
+</robot>
