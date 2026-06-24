@@ -19,18 +19,17 @@ class JointTrajectoryNode(Node):
             'second_segment_joint',
             'third_segment_joint',
             'forth_segment_joint',
-            'gripper_joint',
             'right_gripper_joint',
             'left_gripper_joint'
         ]
 
         # 5 trajectory waypoints (rad)
         self.waypoints = [
-            [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-            [0.5, 0.2, -0.3, 0.4, 0.0, 0.1],
-            [1.0, -0.5, 0.2, -0.2, 0.3, 0.0],
-            [0.3, 0.6, -0.4, 0.1, -0.2, 0.5],
-            [-0.5, 0.0, 0.3, -0.6, 0.4, -0.3],
+            [0.0, 0.0, 0.0, 0.0, 0.0],
+            [0.5, 1.2, -1.3, 0.04, 0.04],
+            [1.0, -1.5, 0.2, -0.08, -0.08],
+            [0.3, 0.6, -2.4, -0.02, -0.02],
+            [1.2, -0.4, 0.4, 0.08, 0.08],
         ]
 
         self.segment = 0

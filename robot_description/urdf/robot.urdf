@@ -155,7 +155,7 @@
 		</collision>
 	</link>
 	<joint name="left_gripper_joint" type="prismatic">
-		<axis xyz="0 1 0"/>
+		<axis xyz="0 -1 0"/>
 		<limit velocity="0.5" effort="1000" upper="0.06" lower="-0.06"/>
 		<parent link="gripper_base"/>
 		<child link="left_gripper"/>
